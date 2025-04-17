@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+	<apiVersion>62.0</apiVersion>
+	<isExposed>true</isExposed>
+    <masterLabel>FCLFilters Component</masterLabel>
+    <description>A reusable global filter component for AppExchange.</description>
+    <targets>
+        <target>lightning__RecordPage</target>
+        <target>lightning__AppPage</target>
+        <target>lightning__HomePage</target>
+    </targets>
+	<targetConfigs>
+        <targetConfig targets="lightning__RecordPage,lightning__AppPage,lightning__HomePage">
+            <property name="objectApiName" type="String" label="Object API Name" description="API name of the object to fetch records from." required="true" />
+            <property name="searchFields" type="String" default="" label="Search Fields" description="Enter a comma-separated list of field API names to perform searches on. If no values are entered, the component will use all fields related to the specified object API name for searching." />
+            <property name="additionalFields" type="String" label="Fields to Include in Result" description="Comma-separated list of additional fields to retrieve." required="true" />
+            <property name="limit" type="Integer" default="2000" label="Limit of the Result" description="Maximum number of records to retrieve." />
+            <property name="orderby" type="String" label="Order By" description="Field(s) to order the results by (e.g., 'Name' or 'Name DESC')"/>
+            <property name="showResult" type="Boolean" default="false" label="Show Grid" description="Whether to display the retrieved records in a grid." />
+            <property name="primaryField" type="String" default="Id" label="Primary Field" description="Field to use as the primary identifier for records." />
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>
