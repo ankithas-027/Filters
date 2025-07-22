@@ -1,13 +1,12 @@
 {
   "packageDirectories": [
     {
-      "versionName": "ver 0.2",
-      "versionNumber": "0.2.0.3.NEXT",
+      "versionName": "ver 0.1",
+      "versionNumber": "0.2.0.NEXT",
       "path": "force-app",
       "default": true,
       "package": "Filters",
-      "versionDescription": "FCL dynamic filters",
-      "ancestorVersion": "0.1.0.1"
+      "versionDescription": "FCL dynamic filters"
     }
   ],
   "name": "Filters",
@@ -15,9 +14,8 @@
   "sfdcLoginUrl": "https://login.salesforce.com",
   "sourceApiVersion": "63.0",
   "packageAliases": {
-    "Filters": "0HogL00000006TdSAI",
+    "Filters": "0HogK00000005SjSAI",
     "Filters@0.1.0-1": "04tgK00000015thQAA",
-    "Filters@0.2.0-1": "04tgL00000048BtQAI",
-    "Filters@0.2.0-2": "04tgL0000004BQVQAY"
+    "Filters@0.2.0-1": "04tgK0000003V3EQA0"
   }
 }
